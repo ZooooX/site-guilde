@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <link rel="shortcut icon" type="img/png" href="./img/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    jQuery(function($){
+      $('.screen img').click(function(){
+        var source = $(this).attr("src");
+        var grow = "<div class='grow' onClick='closeImage()'><div class='image-grown'><img src='"+source+"' alt='' class='imagee'></div></div>";
+        $('body').append(grow);
+      })
+    });
+
+    function closeImage(){
+      $('.grow').remove();
+      $('.image-grown').remove();
+      $('.imagee').remove();
+    }
+    </script>
+    <title>Kolizion | Screens</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="Nom">
+          <img src="img/logo.png" alt="">
+          <h1>Kolizion | Dofus</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html" class="btn">Infos</a></li>
+            <li><a href="membres.html" class="btn">Membres</a></li>
+            <li><a href="screens.html" class="btn open">Screens</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="titre">
+        <img src="img/14000screens.PNG" alt="" width="550px">
+    </div>
+
+    <div class="screen small">
+      <img src="img/screens/ostru-walk.png" alt="ostru-walk concours miss">
+    </div>
+    <div class="screen small">
+      <img src="img/screens/MissHSZoom.png" alt="synoid concours miss">
+    </div>
+    <div class="screen small">
+      <img src="img/screens/skullconcours.png" alt="ostru-walk concours miss">
+    </div>
+    <div class="screen small">
+      <img src="img/screens/Forgelave.png" alt="ostru-walk concours miss">
+    </div>
+    <div class="screen small">
+      <img src="img/screens/trollxd.png" alt="ostru-walk concours miss">
+    </div>
+    <div class="screen small">
+      <img src="img/screens/Brisage Dorado.png" alt="ostru-walk concours miss" id="dorado">
+    </div>
+    <div class="screen small">
+      <img src="img/screens/dofusnebuleux.png" alt="ostru-walk concours miss">
+    </div>
+    <div class="screen small">
+      <img src="img/screens/compilskin.png" alt="ostru-walk concours miss">
+    </div>
+    <div class="screen small">
+      <img src="img/screens/auras.png" alt="ostru-walk concours miss">
+    </div>
+  </body>
+</html>
